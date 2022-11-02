@@ -5,7 +5,12 @@ module.exports = {
     "*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'nunito' : ['Nunito', 'sans-serif'],
+        'libre'  : ['Libre Baskerville', 'serif'],
+      }
+    },
   },
   plugins: [],
 }

@@ -5,11 +5,427 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
-    <title>BM-1 Tailwind</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap');
+    </style>
+    <title>Blog Mock 1</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <div class="">
+        <!-- Header -->
+        <header class="bg-stone-50 py-4 px-2">
+            <div class="container m-auto xl:px-36">
+                <div class="md:flex md:justify-between items-center">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-3xl text-slate-600 font-libre font-bold">Bloggie</h3>
+                        <div class="md:hidden mr-3">
+                            <svg id="nav-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                            </svg> 
+                        </div>
+                    </div>
+                    <div id="navbar" class="hidden flex-col md:flex md:flex-row md:items-center md:gap-5">
+                        <div class="flex flex-col md:flex-row">
+                            <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">Home</a>
+                            <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">Categories</a>
+                            <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">About</a>
+                            <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">Contact</a>
+                        </div>
+                        <div class="">
+                            <button class="text-center w-full mt-2 md:mt-0 md:w-auto bg-orange-500 text-white px-5 py-2 rounded-lg">Become a Author</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </header>
+        <!-- Section 1 -->
+        <main>
+            <section class="mt-5 md:mt-12 mb-5 md:mb-12">
+                <div class="container m-auto xl:px-36">
+                    <div class="p-3 md:py-3 md:px-5">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl xl:text-4xl font-bold font-libre">Featured</h2>
+                        </div>
+                        <!-- Hero -->
+                        <div class="md:grid md:grid-cols-5 md:justify-between items-center md:gap-7 mb-12">
+                            <div class="overflow-hidden col-span-2">
+                                <img src="./src/images/thumb.png" class="object-cover hover:scale-110 transition-all ease-in-out rounded-md" alt="">
+                            </div>
+                            <div class="mt-3 md:mt-0 col-span-3">
+                                <div>
+                                    <p class="text-md font-bold font-nunito"><span class="">Hello World</span> - <span class="text-gray-300">14 Hours Ago</span></p>
+                                </div>
+                                <div class="pt-2">
+                                    <h2 class="text-3xl xl:text-5xl font-nunito font-bold">What Did Krishna said to Arjuna before the War?</h2>
+                                    <p class="text-md mt-2 text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo doloribus sit illo! Nisi sapiente maxime error voluptas illo. In alias molestiae dolor aliquid inventore nesciunt modi consequatur deserunt delectus debitis!</p>
+                                </div>
+                                <div class="flex mt-3 gap-3 items-center">
+                                    <div class="rounded-full h-12 w-12">
+                                        <img src="./src/images/avatar.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                        <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-nunito font-bold">Recent Posts</h3>
+                        </div>
+                        <!-- Blocks -->
+                        <div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-7 mt-5">
+                            <div class="rounded-md shadow-lg mt-5 md:mt-0">
+                                <div class="max-h-64 overflow-hidden">
+                                    <img src="https://picsum.photos/seed/picsum/1920/1080" class="object-cover rounded-t-md " alt="">
+                                </div>
+                                <div class="py-4 px-5">
+                                    <p class="text-md"><span class="font-bold">Hello World</span> - <span class="text-stone-400">14 Hours Ago</span></p>
+                                    <h1 class="text-2xl font-bold font-nunito">Why should you exercise daily?</h1>
+                                    <p class="font-nunito text-stone-400 mt-2 mb-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet maxime, autem rery is the ...</span> <a href="" class="underline">Read More</a></p>
+                                    <div class="flex gap-5">
+                                       <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                                <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                       </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z" clip-rule="evenodd" />
+                                            </svg> 
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-5 gap-3 items-center">
+                                        <div class="rounded-full h-12 w-12">
+                                            <img src="./src/images/avatar.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                            <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md shadow-lg mt-5 md:mt-0">
+                                <div class="max-h-64 overflow-hidden">
+                                    <img src="https://picsum.photos/id/702/1920/1080" class="object-cover rounded-t-md " alt="">
+                                </div>
+                                <div class="py-4 px-5">
+                                    <p class="text-md"><span class="font-bold">Hello World</span> - <span class="text-stone-400">14 Hours Ago</span></p>
+                                    <h1 class="text-2xl font-bold font-nunito">Why should you exercise daily?</h1>
+                                    <p class="font-nunito text-stone-400 mt-2 mb-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet maxime, autem rery is the ...</span> <a href="" class="underline">Read More</a></p>
+                                    <div class="flex gap-5">
+                                       <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                                <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                       </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z" clip-rule="evenodd" />
+                                            </svg> 
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-5 gap-3 items-center">
+                                        <div class="rounded-full h-12 w-12">
+                                            <img src="./src/images/avatar.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                            <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md shadow-lg mt-5 md:mt-0">
+                                <div class="max-h-64 overflow-hidden">
+                                    <img src="https://picsum.photos/id/635/1920/1080" class="object-cover rounded-t-md " alt="">
+                                </div>
+                                <div class="py-4 px-5">
+                                    <p class="text-md"><span class="font-bold">Hello World</span> - <span class="text-stone-400">14 Hours Ago</span></p>
+                                    <h1 class="text-2xl font-bold font-nunito">Why should you exercise daily?</h1>
+                                    <p class="font-nunito text-stone-400 mt-2 mb-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet maxime, autem rery is the ...</span> <a href="" class="underline">Read More</a></p>
+                                    <div class="flex gap-5">
+                                       <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                                <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                       </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z" clip-rule="evenodd" />
+                                            </svg> 
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-5 gap-3 items-center">
+                                        <div class="rounded-full h-12 w-12">
+                                            <img src="./src/images/avatar.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                            <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md shadow-lg mt-5 md:mt-0">
+                                <div class="max-h-64 overflow-hidden">
+                                    <img src="https://picsum.photos/id/555/1920/1080" class="object-cover rounded-t-md " alt="">
+                                </div>
+                                <div class="py-4 px-5">
+                                    <p class="text-md"><span class="font-bold">Hello World</span> - <span class="text-stone-400">14 Hours Ago</span></p>
+                                    <h1 class="text-2xl font-bold font-nunito">Why should you exercise daily?</h1>
+                                    <p class="font-nunito text-stone-400 mt-2 mb-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet maxime, autem rery is the ...</span> <a href="" class="underline">Read More</a></p>
+                                    <div class="flex gap-5">
+                                       <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                                <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                       </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z" clip-rule="evenodd" />
+                                            </svg> 
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-5 gap-3 items-center">
+                                        <div class="rounded-full h-12 w-12">
+                                            <img src="./src/images/avatar.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                            <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md shadow-lg mt-5 md:mt-0">
+                                <div class="max-h-64 overflow-hidden">
+                                    <img src="https://picsum.photos/id/152/1920/1080" class="object-cover rounded-t-md " alt="">
+                                </div>
+                                <div class="py-4 px-5">
+                                    <p class="text-md"><span class="font-bold">Hello World</span> - <span class="text-stone-400">14 Hours Ago</span></p>
+                                    <h1 class="text-2xl font-bold font-nunito">Why should you exercise daily?</h1>
+                                    <p class="font-nunito text-stone-400 mt-2 mb-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet maxime, autem rery is the ...</span> <a href="" class="underline">Read More</a></p>
+                                    <div class="flex gap-5">
+                                       <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                                <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                       </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z" clip-rule="evenodd" />
+                                            </svg> 
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-5 gap-3 items-center">
+                                        <div class="rounded-full h-12 w-12">
+                                            <img src="./src/images/avatar.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                            <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md shadow-lg mt-5 md:mt-0">
+                                <div class="max-h-64 overflow-hidden">
+                                    <img src="https://picsum.photos/id/784/1920/1080" class="object-cover rounded-t-md " alt="">
+                                </div>
+                                <div class="py-4 px-5">
+                                    <p class="text-md"><span class="font-bold">Hello World</span> - <span class="text-stone-400">14 Hours Ago</span></p>
+                                    <h1 class="text-2xl font-bold font-nunito">Why should you exercise daily?</h1>
+                                    <p class="font-nunito text-stone-400 mt-2 mb-2"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet maxime, autem rery is the ...</span> <a href="" class="underline">Read More</a></p>
+                                    <div class="flex gap-5">
+                                       <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                                <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                       </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 01-.533-.074.75.75 0 01-.44-1.223 3.73 3.73 0 00.814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 01-4.246.997z" clip-rule="evenodd" />
+                                            </svg> 
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                                                <path d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                            </svg>
+                                            <span class="text-gray-400 text-lg">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-5 gap-3 items-center">
+                                        <div class="rounded-full h-12 w-12">
+                                            <img src="./src/images/avatar.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold font-nunito">Bloggie Admin</h4>
+                                            <span class="text-md font-bold font-nunito text-gray-300">Admin, CEO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>  
+                </div>
+            </section>
+        </main>
+        <footer class="bg-stone-50 py-4 px-2">
+            <div class="container m-auto xl:px-36">
+                <div class="md:grid md:grid-cols-5 mt-4">
+                    <div class="col-span-2 p-5 flex flex-col items-center">
+                        <h1 class="text-2xl font-bold font-libre">Bloggie</h1>
+                        <div class="flex items-center gap-8 mt-5">
+                            <div class="h-36 w-36 bg-red-400 rounded-full overflow-hidden">
+                                <img src="./src/images/author.jpeg" class="object-contain w-full" alt="">
+                            </div>
+                            <div>
+                                <h2 class="font-bold font-nunito text-3xl">R Cube Dev</h2>
+                                <p>Do it If you want,</p>
+                            </div>
+                        </div>
+                        <div class="flex mx-auto mt-8">
+                            <div class="flex items-center mx-auto gap-7">
+                                <div class="bg-slate-300 rounded-lg p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-300 rounded-lg p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-300 rounded-lg p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                                    </svg>
+                                </div>
+                                <div class="bg-slate-300 rounded-lg p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z"></path>
+                                        <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z"></path>
+                                        <path d="M16 4l-4 4l-4 -4"></path>
+                                        <path d="M4 6.5l8 7.5l8 -7.5"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 p-5 flex flex-col items-center text-center">
+                        <h2 class="text-2xl font-bold font-libre">Useful Links</h2>
+                        <ul class="mt-5">
+                            <li class="text-gray-400 text-lg pb-2">Sitemap</li>
+                            <li class="text-gray-400 text-lg pb-2">Terms & Conditions</li>
+                            <li class="text-gray-400 text-lg pb-2">Privacy Policy</li>
+                            <li class="text-gray-400 text-lg pb-2">Become Author</li>
+                            <li class="text-gray-400 text-lg pb-2">Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 py-5 px-10 flex flex-col items-centert">
+                        <h2 class="text-2xl font-bold font-libre text-center">Get to Your Mailbox</h2>
+                        <p class="text-gray-400 text-lg my-8">Sign up to our newselleter to recieve daily updates on latest posts directly to your mailbox.</p>
+                        <form action="" class="">
+                            <div>
+                                <div class="md:flex gap-7 items-center justify-center">
+                                    <div class="relative">
+                                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                        </div>
+                                        <input type="text" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="mt-5 md:mt-0 p-2.5 bg-orange-400 rounded-lg px-3 w-full text-white font-nunito">Add to list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex flex-col mx-auto gap-7 mt-8 text-center">
+                    <span>Copyright ©️. All rights Reserved | Template made with ❤️ by R Cube Dev</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Debug Breakpoints -->
+    <div class="fixed bottom-0 z-50 bg-green-500 bg-opacity-70 text-white text-xl shadow-md px-2">
+        <span class="sm:hidden">default</span>
+        <span class="hidden sm:inline md:hidden">sm</span>
+        <span class="hidden md:inline lg:hidden">md</span>
+        <span class="hidden lg:inline xl:hidden">lg</span>
+        <span class="hidden xl:inline 2xl:hidden">xl</span>
+        <span class="hidden 2xl:inline">2xl</span>
+    </div>
+    <!-- Scripts -->
+    <script>
+        const nav_btn = document.getElementById("nav-btn");
+        const navbar = document.getElementById("navbar");
+        nav_btn.addEventListener("click", () => {
+            if (navbar.classList.contains("hidden")) {
+                navbar.classList.add("flex");
+                navbar.classList.remove("hidden")
+            } else {
+                navbar.classList.remove("flex");
+                navbar.classList.add("hidden")
+            }
+        })
+    </script>
 </body>
 </html>
