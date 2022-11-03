@@ -15,24 +15,37 @@
         <!-- Header -->
         <header class="bg-stone-50 py-4 px-2">
             <div class="container m-auto xl:px-36">
-                <div class="md:flex md:justify-between items-center">
+                <div class="lg:flex lg:justify-between items-center">
                     <div class="flex justify-between items-center">
                         <h3 class="text-3xl text-slate-600 font-libre font-bold">Bloggie</h3>
-                        <div class="md:hidden mr-3">
+                        <div class="lg:hidden mr-3">
                             <svg id="nav-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                 <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
                             </svg> 
                         </div>
                     </div>
-                    <div id="navbar" class="hidden flex-col md:flex md:flex-row md:items-center md:gap-5">
-                        <div class="flex flex-col md:flex-row">
+                    <div id="navbar" class="hidden mt-3 lg:mt-0 flex-col lg:flex lg:flex-row lg:items-center lg:gap-5">
+                        <div class="flex flex-col mb-3 lg:mb-0 lg:flex-row">
                             <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">Home</a>
                             <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">Categories</a>
                             <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">About</a>
                             <a href="" class="text-xl font-bold font-nunito text-slate-700 ml-8 mt-2 md:mt-0">Contact</a>
                         </div>
-                        <div class="">
-                            <button class="text-center w-full mt-2 md:mt-0 md:w-auto bg-orange-500 text-white px-5 py-2 rounded-lg">Become a Author</button>
+                        <form action="" class="px-3 lg:px-0">
+                            <div class="relative flex">
+                                <div class="flex rounded-lg overflow-hidden w-full">
+                                    <input type="text" class="w-full rounded-md rounded-r-none outline-none pl-2 bg-transparent focus:shadow-lg border-2 focus:border-b-2 focus:border-orange-500" placeholder="Search the Blog"/>
+                                    <button class="bg-orange-500 text-white px-2 font-semibold py-2 rounded-r-md hover:shadow-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                            <path d="M8.25 10.875a2.625 2.625 0 115.25 0 2.625 2.625 0 01-5.25 0z" />
+                                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.125 4.5a4.125 4.125 0 102.338 7.524l2.007 2.006a.75.75 0 101.06-1.06l-2.006-2.007a4.125 4.125 0 00-3.399-6.463z" clip-rule="evenodd" />
+                                        </svg>                                          
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="px-3 lg:px-0">
+                            <button class="text-center w-full mt-5 lg:mt-0 lg:w-auto bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg">Become a Author</button>
                         </div>
                     </div>  
                 </div>
@@ -327,7 +340,7 @@
                         <h1 class="text-2xl font-bold font-libre">Bloggie</h1>
                         <div class="flex items-center gap-8 mt-5">
                             <div class="h-36 w-36 bg-red-400 rounded-full overflow-hidden">
-                                <img src="./src/images/author.jpeg" class="object-contain w-full" alt="">
+                                <img src="./src/images/author.jpeg" class="object-contain w-full hover:scale-105 transition-all ease-in" alt="">
                             </div>
                             <div>
                                 <h2 class="font-bold font-nunito text-3xl">R Cube Dev</h2>
@@ -336,13 +349,13 @@
                         </div>
                         <div class="flex mx-auto mt-8">
                             <div class="flex items-center mx-auto gap-7">
-                                <div class="bg-slate-300 rounded-lg p-2">
+                                <div class="bg-slate-300 rounded-lg p-2 hover:shadow-lg hover:scale-110 transition-all ease-in cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
                                     </svg>
                                 </div>
-                                <div class="bg-slate-300 rounded-lg p-2">
+                                <div class="bg-slate-300 rounded-lg p-2 hover:shadow-lg hover:scale-110 transition-all ease-in cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <rect x="4" y="4" width="16" height="16" rx="4"></rect>
@@ -350,13 +363,13 @@
                                         <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
                                     </svg>
                                 </div>
-                                <div class="bg-slate-300 rounded-lg p-2">
+                                <div class="bg-slate-300 rounded-lg p-2 hover:shadow-lg hover:scale-110 transition-all ease-in cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
                                     </svg>
                                 </div>
-                                <div class="bg-slate-300 rounded-lg p-2">
+                                <div class="bg-slate-300 rounded-lg p-2 hover:shadow-lg hover:scale-110 transition-all ease-in cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z"></path>
@@ -371,31 +384,26 @@
                     <div class="col-span-1 p-5 flex flex-col items-center text-center">
                         <h2 class="text-2xl font-bold font-libre">Useful Links</h2>
                         <ul class="mt-5">
-                            <li class="text-gray-400 text-lg pb-2">Sitemap</li>
-                            <li class="text-gray-400 text-lg pb-2">Terms & Conditions</li>
-                            <li class="text-gray-400 text-lg pb-2">Privacy Policy</li>
-                            <li class="text-gray-400 text-lg pb-2">Become Author</li>
-                            <li class="text-gray-400 text-lg pb-2">Contact Us</li>
+                            <li class="text-gray-400 text-lg pb-2 hover:text-slate-600 transition-all ease-in cursor-pointer">Sitemap</li>
+                            <li class="text-gray-400 text-lg pb-2 hover:text-slate-600 transition-all ease-in cursor-pointer">Terms & Conditions</li>
+                            <li class="text-gray-400 text-lg pb-2 hover:text-slate-600 transition-all ease-in cursor-pointer">Privacy Policy</li>
+                            <li class="text-gray-400 text-lg pb-2 hover:text-slate-600 transition-all ease-in cursor-pointer">Become Author</li>
+                            <li class="text-gray-400 text-lg pb-2 hover:text-slate-600 transition-all ease-in cursor-pointer">Contact Us</li>
                         </ul>
                     </div>
-                    <div class="col-span-2 py-5 px-10 flex flex-col items-centert">
+                    <div class="col-span-2 py-5 px-2 md:px-10 flex flex-col items-centert">
                         <h2 class="text-2xl font-bold font-libre text-center">Get to Your Mailbox</h2>
                         <p class="text-gray-400 text-lg my-8">Sign up to our newselleter to recieve daily updates on latest posts directly to your mailbox.</p>
-                        <form action="" class="">
-                            <div>
-                                <div class="md:flex gap-7 items-center justify-center">
-                                    <div class="relative">
-                                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                                        </div>
-                                        <input type="text" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="mt-5 md:mt-0 p-2.5 bg-orange-400 rounded-lg px-3 w-full text-white font-nunito">Add to list</button>
-                                    </div>
+                        <div class="flex justify-center">
+                            <form action="" class="w-full">
+                                <div>
+                                    <input type="email" class="w-full p-2 rounded-lg shadow-md outline-none border-b-2 border-b-transparent focus:border-b-2 focus:border-b-orange-500" placeholder="bloggie@email.com">
                                 </div>
-                            </div>
-                        </form>
+                                <div class="mt-5 flex justify-center">
+                                    <button type="submit" class="text-center px-10 py-2 bg-orange-500 text-white font-semibold rounded-lg shadow-sm hover:shadow-lg transition-all ease-in-out">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="flex flex-col mx-auto gap-7 mt-8 text-center">
